@@ -21,7 +21,7 @@ Its based on our current production deployments and includes support for the fol
 * Barbican
 * Monasca
 
-We use Postgres DBs and RabbitMQ messaging. Persistent is achaived with Kubernetes persistent volume/claims backed by either NFS or iSCSI
+We use Postgres DBs and RabbitMQ messaging. Persistent is achieved with Kubernetes persistent volume/claims backed by either NFS or iSCSI
 
 Our containers are based on standard Kolla built images, although we add to many containers (see /m3-containers) and all configuration and
 start scripts, along with a few patches are injected via Kubernetes configmaps and secrets.
