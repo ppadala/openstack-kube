@@ -37,7 +37,7 @@ or source your own Kolla images.
 However, in principle, to deploy and update your Openstack just run `bin/os-deploy [your-namespace] example-region``.
 
 
-Its anticpated that in teh very near future the crude bash/python deploy scripts will be replaced by a Go CLI.
+It's anticpated that in the very near future the crude bash/python deploy scripts will be replaced by a Go CLI.
 
 
 
