@@ -1,7 +1,8 @@
-FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-central:v2quota
+FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-central:stable-mitaka
 
 MAINTAINER andrew.battye@sap.com
 
+USER root
 RUN apt-get -y update
 RUN apt-get -y install python-mysqldb
 

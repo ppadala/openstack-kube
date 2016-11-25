@@ -15,7 +15,8 @@ RUN cd /neutron-lbaas-dashboard && python setup.py install
 
 RUN cp /neutron-lbaas-dashboard/neutron_lbaas_dashboard/enabled/_1481_project_ng_loadbalancersv2_panel.py /var/lib/kolla/venv/lib/python2.7/site-packages/openstack_dashboard/enabled/
 
-RUN cd /neutron-lbaas-dashboard && chmod 700 manage.py && ./manage.py collectstatic --noinput
+RUN cd /neutron-lbaas-dashboard && chmod 700 manage.py 
+RUN cd /neutron-lbaas-dashboard && ./manage.py collectstatic --noinput
 
 RUN git clone -c http.sslVerify=false --depth 1 --branch "stable/mitaka" https://github.com/openstack/designate-dashboard.git
 RUN cd /designate-dashboard && python setup.py install

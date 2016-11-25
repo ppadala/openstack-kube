@@ -1,4 +1,4 @@
-FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-api:v2quota
+FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-api:stable-mitaka
 
 MAINTAINER andrew.battye@sap.com
 

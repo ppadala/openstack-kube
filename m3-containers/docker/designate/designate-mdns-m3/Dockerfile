@@ -1,7 +1,8 @@
-FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-mdns:v2quota
+FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-mdns:stable-mitaka
 
 MAINTAINER andrew.battye@sap.com
 
+USER root
 RUN apt-get -y update
 RUN apt-get -y install python-mysqldb
 

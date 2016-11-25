@@ -1,6 +1,7 @@
-FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-poolmanager:v2quota
+FROM hub.global.cloud.sap/monsoon/ubuntu-source-designate-poolmanager:stable-mitaka
 MAINTAINER andrew.battye@sap.com
 
+USER root
 RUN apt-get -y update
 RUN apt-get -y install bind9utils
 
